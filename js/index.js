@@ -59,23 +59,58 @@ btnName.textContent=siteContent["cta"]["button"];
 let imgPic = document.querySelector('#cta-img');
 imgPic.setAttribute('src',siteContent["cta"]["img-src"])
 
-//middle
-let topLeft1=document.querySelectorAll(".main-content .text-content h4")
+//middle-content
+
+//top
+let topLeft1=document.querySelectorAll(".top-content .text-content h4")
 topLeft1[0].textContent = siteContent["main-content"]["features-h4"];
-let topLeft2=document.querySelectorAll(".main-content .text-content p")
+
+let topLeft2=document.querySelectorAll(".top-content .text-content p")
 topLeft2[0].textContent = siteContent["main-content"]["features-content"];
 
-let topRight1=document.querySelectorAll(".main-content .text-content h4")
+let topRight1=document.querySelectorAll(".top-content .text-content h4")
 topRight1[1].textContent = siteContent["main-content"]["about-h4"]
-let topRight2=document.querySelectorAll(".main-content .text-content p")
+
+let topRight2=document.querySelectorAll(".top-content .text-content p")
 topRight2[1].textContent=siteContent["main-content"]["about-content"]
 
-// let featureName=document.querySelectorAll(".main-content .text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
-
-
-
+//middle-image
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src',siteContent['main-content']['middle-img-src'])
+
+//bottom
+let bottomLeft1=document.querySelectorAll(".bottom-content .text-content h4")
+bottomLeft1[0].textContent = siteContent["main-content"]["services-h4"];
+
+let bottomLeft2=document.querySelectorAll(".bottom-content .text-content p")
+bottomLeft2[0].textContent = siteContent["main-content"]["services-content"];
+
+let bottomCenter1=document.querySelectorAll(".bottom-content .text-content h4")
+bottomCenter1[1].textContent = siteContent["main-content"]["product-h4"];
+
+let bottomCenter2=document.querySelectorAll(".bottom-content .text-content p")
+bottomCenter2[1].textContent = siteContent["main-content"]["product-content"];
+
+let bottomRight1=document.querySelectorAll(".bottom-content .text-content h4")
+bottomRight1[2].textContent = siteContent["main-content"]["vision-h4"];
+
+let bottomRight2=document.querySelectorAll(".bottom-content .text-content p")
+bottomRight2[2].textContent = siteContent["main-content"]["vision-content"];
+
+//contact
+let contactHeader = document.querySelectorAll(".contact h4")
+contactHeader[0].textContent=siteContent["contact"]["contact-h4"];
+
+let contactParagraph = document.querySelectorAll(".contact p")
+contactParagraph[0].textContent=siteContent["contact"]["address"];
+contactParagraph[1].textContent=siteContent["contact"]["phone"];
+contactParagraph[2].textContent=siteContent["contact"]["email"];
+
+let footerParagraph=document.querySelectorAll("footer p")
+footerParagraph[0].textContent = siteContent["footer"].copyright;
+
+
+
 
 
 
