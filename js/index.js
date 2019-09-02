@@ -107,7 +107,16 @@ contactParagraph[1].textContent=siteContent["contact"]["phone"];
 contactParagraph[2].textContent=siteContent["contact"]["email"];
 
 let footerParagraph=document.querySelectorAll("footer p")
-footerParagraph[0].textContent = siteContent["footer"].copyright;
+footerParagraph[0].textContent = siteContent["footer"]["copyright"];
+
+//add color
+
+tagNames[0].style.color="green";
+tagNames[1].style.color="green";
+tagNames[2].style.color="green";
+tagNames[3].style.color="green";
+tagNames[4].style.color="green";
+tagNames[5].style.color="green";
 
 
 
