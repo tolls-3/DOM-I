@@ -42,16 +42,16 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src',siteContent["nav"]["img-src"])
 
 let tagNames = document.getElementsByTagName('a');
-tagNames[0].textContent='Services';
-tagNames[1].textContent='Product';
-tagNames[2].textContent='Vision';
-tagNames[3].textContent='Features';
-tagNames[4].textContent='About';
-tagNames[5].textContent='Contact';
+tagNames[0].textContent=siteContent['nav']['nav-item-1']
+tagNames[1].textContent=siteContent['nav']['nav-item-2']
+tagNames[2].textContent=siteContent['nav']['nav-item-3']
+tagNames[3].textContent=siteContent['nav']['nav-item-4']
+tagNames[4].textContent=siteContent['nav']['nav-item-5']
+tagNames[5].textContent=siteContent['nav']['nav-item-6']
 
 //cta
 let headerName = document.querySelector('h1');
-headerName.textContent= siteContent["cta"]["h1"];
+headerName.innerText= "DOM \n is \n awesome"
 
 let btnName = document.querySelector('button');
 btnName.textContent=siteContent["cta"]["button"];
@@ -59,7 +59,21 @@ btnName.textContent=siteContent["cta"]["button"];
 let imgPic = document.querySelector('#cta-img');
 imgPic.setAttribute('src',siteContent["cta"]["img-src"])
 
-//middle-img
+//middle
+let topLeft1=document.querySelectorAll(".main-content .text-content h4")
+topLeft1[0].textContent = siteContent["main-content"]["features-h4"];
+let topLeft2=document.querySelectorAll(".main-content .text-content p")
+topLeft2[0].textContent = siteContent["main-content"]["features-content"];
+
+let topRight1=document.querySelectorAll(".main-content .text-content h4")
+topRight1[1].textContent = siteContent["main-content"]["about-h4"]
+let topRight2=document.querySelectorAll(".main-content .text-content p")
+topRight2[1].textContent=siteContent["main-content"]["about-content"]
+
+// let featureName=document.querySelectorAll(".main-content .text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
+
+
+
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src',siteContent['main-content']['middle-img-src'])
 
