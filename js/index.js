@@ -122,18 +122,18 @@ tagNames[5].style.color="green";
 //add append and prepend
 
 // create something for the DOM progratically
-let myNewNav = document.createElement('a');
+let myFirstNewNav = document.createElement('a');
+myFirstNewNav.textContent = 'Home';
+myFirstNewNav.style.color="green";
 
-// added certain content and attributes
-myNewNav.textContent = 'Home';
-// // myNewParagraph.classList.add('cats', 'green');
-// myNewParagraph.setAttribute('id', 'theBestParagraph');
+let mySecondNewNav=document.createElement('a')
+mySecondNewNav.textContent="Info";
+mySecondNewNav.style.color="green";
 
-// // we captured the element we wish to append to
-// var section = document.querySelector('section');
+let navBar=document.querySelector('nav')
+navBar.appendChild(mySecondNewNav);
+navBar.prepend(myFirstNewNav);
 
-// to it, we appended the newly created thing
-tagNames.appendChild(myNewNav);
 
 
 
