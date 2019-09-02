@@ -121,7 +121,6 @@ tagNames[5].style.color="green";
 
 //add append and prepend
 
-// create something for the DOM progratically
 let myFirstNewNav = document.createElement('a');
 myFirstNewNav.textContent = 'Home';
 myFirstNewNav.style.color="green";
